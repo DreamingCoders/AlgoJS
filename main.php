@@ -1,7 +1,8 @@
 <?php
 /* Data cluster[
-  Transactions table
-  id, email, userAlgo, userAlgoAddress, receiverAlgoAddress, timestamp
+    Transactions table{
+    id, email, userAlgo, userAlgoAddress, receiverAlgoAddress, timestamp
+    }
   ]
 */
   
