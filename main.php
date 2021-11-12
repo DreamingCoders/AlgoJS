@@ -1,5 +1,28 @@
 <?php
+/* Data cluster[
+  Transactions table
+  id, email, userAlgo, userAlgoAddress, receiverAlgoAddress, timestamp
+  ]
+*/
+  
+// Global variables
+$loggedIn = null;
+$user = null;
+  $email = null;
+  $userAlgo = $user->algo;
+  $userAlgoAddress = $user->algoAddress;
+
 if(isset($_GET['tId'])){
+  if(!$loggedIn){
+    die();
+  }
+  if($userAlgo == null){
+    die();
+  }
+  if($userAlgoAddress == null){
+    die();
+  }
+  
   $transaction_id = htmlentities($_GET['tId']));
   if(!$transaction_id){
     die("Server Anomaly");
